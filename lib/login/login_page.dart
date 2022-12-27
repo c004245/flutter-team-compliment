@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../common/app_routes.dart';
 import 'login_controller.dart';
 
 class LoginPage extends GetView<LoginController> {
@@ -16,14 +17,18 @@ class LoginPage extends GetView<LoginController> {
                 child: Column(children: [
                   Expanded(
                       child: Column(
-                    children: const [
-                      Text(
-                        "칭찬앱",
-                        style: TextStyle(
-                            color: Colors.deepOrangeAccent,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 40),
-                      ),
+                    children: [
+                      GestureDetector(
+                          onTap: () {
+                            Get.offAllNamed(AppRoutes.mainList);
+                          },
+                          child: const Text(
+                            "칭찬앱",
+                            style: TextStyle(
+                                color: Colors.deepOrangeAccent,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 40),
+                          )),
                     ],
                   ))
                 ]))));
