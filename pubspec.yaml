@@ -37,6 +37,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+  #GetX 패턴으로 구조를 잡을 예정이라 해당 라이브러리를 사용합니다.
+  get: ^4.6.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
