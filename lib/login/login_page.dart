@@ -18,7 +18,7 @@ class LoginPage extends GetView<LoginController> {
                 child: Column(children: [
                       SignInButton(Buttons.Google,
                       onPressed: () {
-                        controller.signInWithGoogle()
+                        controller.signInWithGoogle();
                       },
                       ),
                       // Text(

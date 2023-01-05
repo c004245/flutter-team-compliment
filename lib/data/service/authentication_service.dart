@@ -1,4 +1,6 @@
 import 'package:flutter_team_compliment/model/UserEntity.dart';
+import 'package:flutter_team_compliment/repository/authentication_repository.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 abstract class IAuthenticationService {
   Future<String?> signInWithGoogle();
