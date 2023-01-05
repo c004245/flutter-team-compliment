@@ -6,6 +6,8 @@ import 'app_routes.dart';
 
 import 'package:flutter_team_compliment/splash/splash_page.dart';
 import 'package:flutter_team_compliment/splash/splash_binding.dart';
+import 'package:flutter_team_compliment/main_list/main_list_page.dart';
+import 'package:flutter_team_compliment/main_list/main_list_binding.dart';
 import 'package:get/get.dart';
 
 class AppPages {
@@ -17,6 +19,10 @@ class AppPages {
     GetPage(
         name: AppRoutes.login,
         page: () => const LoginPage(),
-        binding: LoginBinding())
+        binding: LoginBinding()),
+    GetPage(
+        name: AppRoutes.mainList,
+        page: () => const MainListPage(),
+        binding: MainListBinding())
   ];
 }
