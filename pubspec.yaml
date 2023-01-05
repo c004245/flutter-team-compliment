@@ -43,6 +43,7 @@ dependencies:
   #Google login을 위해 해당 라이브러리를 사용합니다.
   google_sign_in: ^5.4.2
   flutter_signin_button: ^2.0.0
+  firebase_auth: ^4.2.4
 
 
 dev_dependencies:
