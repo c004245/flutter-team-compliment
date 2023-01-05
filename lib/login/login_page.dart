@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_signin_button/button_view.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:get/get.dart';
 import 'login_controller.dart';
 
@@ -14,18 +16,23 @@ class LoginPage extends GetView<LoginController> {
             child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(children: [
-                  Expanded(
-                      child: Column(
-                    children: const [
-                      Text(
-                        "칭찬앱",
-                        style: TextStyle(
-                            color: Colors.deepOrangeAccent,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 40),
+                      SignInButton(Buttons.Google,
+                      onPressed: () {
+                        controller.signInWithGoogle()
+                      },
                       ),
+                      // Text(
+                      //   "칭찬앱",
+                      //   style: TextStyle(
+                      //       color: Colors.deepOrangeAccent,
+                      //       fontWeight: FontWeight.bold,
+                      //       fontSize: 40),
+                      // ),
                     ],
-                  ))
-                ]))));
+                  )
+    )
+    )
+    )
+
   }
 }

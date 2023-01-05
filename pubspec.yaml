@@ -40,6 +40,11 @@ dependencies:
   #GetX 패턴으로 구조를 잡을 예정이라 해당 라이브러리를 사용합니다.
   get: ^4.6.1
 
+  #Google login을 위해 해당 라이브러리를 사용합니다.
+  google_sign_in: ^5.4.2
+  flutter_signin_button: ^2.0.0
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
