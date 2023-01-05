@@ -16,7 +16,8 @@ class LoginPage extends GetView<LoginController> {
             child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(children: [
-                      SignInButton(Buttons.Google,
+                  Center(
+                      child: SignInButton(Buttons.Google,
                       onPressed: () {
                         controller.signInWithGoogle();
                       },
@@ -28,11 +29,12 @@ class LoginPage extends GetView<LoginController> {
                       //       fontWeight: FontWeight.bold,
                       //       fontSize: 40),
                       // ),
+                  ),
                     ],
                   )
     )
     )
-    )
+    );
 
   }
 }

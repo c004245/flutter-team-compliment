@@ -14,7 +14,7 @@ class LoginController extends GetxController {
     _authenticationService
       .signInWithGoogle()
         .then((uid) => _signInComplete(uid))
-        .onError((error, stackTrace) => _signInOnError());
+        .onError((error, stackTrace) => _signInOnError(error, stackTrace));
   }
 
   void _signInComplete(String? uid) {
@@ -23,7 +23,9 @@ class LoginController extends GetxController {
         : Get.offAll(AppRoutes.login);
   }
 
-  void _signInOnError() {
+  void _signInOnError(Object? error, StackTrace stackTrace) {
+    print("signInOnError -> $error");
+    print("signInOnError -> $stackTrace");
     //내부데이터를 제거하고 로그인 화면으로넘긴다..
   }
 
